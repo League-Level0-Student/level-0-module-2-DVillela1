@@ -18,7 +18,11 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-
+	String answer = JOptionPane.showInputDialog("Input the code to see the secret message (only use digits).");
+	int guess = Integer.parseInt(answer);	
+	for (int i = 0; i < Integer.MAX_VALUE; i++) {
+		tryCode(i);
+	}
 
 	}
 
